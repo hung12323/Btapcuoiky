@@ -1,13 +1,12 @@
 
-import {  View, TouchableOpacity, Image,StyleSheet, Text,images, } from 'react-native'
+import {  View, TouchableOpacity, Image,StyleSheet, Text,ScrollView } from 'react-native'
 import React from 'react'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { ScrollView } from 'react-native-gesture-handler';
-import Swiper from 'react-native-swiper';
-const Detail =({navigation}) =>{
-const Tab = createMaterialBottomTabNavigator();
 
-  
+import Swiper from 'react-native-swiper';
+
+const Tab = createMaterialBottomTabNavigator();
+const Detail =({navigation}) =>{
   return (
     <View style={{ flex: 1 }}>
        <Tab.Navigator initialRouteName='Home' >

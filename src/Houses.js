@@ -2,7 +2,7 @@
 import {  View, TouchableOpacity, Image,StyleSheet, Text  } from 'react-native'
 import React from 'react'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-
+// import Saved from './src/Saved';
 const Tab = createMaterialBottomTabNavigator();
 
 const Houses = ({navigation}) => {
@@ -71,7 +71,7 @@ function Collections({navigation}) {
         
       </View>
      </TouchableOpacity>
-     <TouchableOpacity>
+     <TouchableOpacity onPress={() => navigation.navigate("Detail2")}>
      <View style={styles.thananh}>
         <Image
           source={require("../assets/categori/32.png")}
@@ -79,7 +79,7 @@ function Collections({navigation}) {
         
       </View>
      </TouchableOpacity>
-     <TouchableOpacity>
+     <TouchableOpacity onPress={() => navigation.navigate("Detail3")}>
      <View style={styles.thananh}>
         <Image
           source={require("../assets/categori/33.png")}
