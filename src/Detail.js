@@ -93,7 +93,14 @@ function Home({navigation}) {
     <Text style={{marginLeft:50}}>Baths</Text>
     <Text style={{marginLeft:182}}>3ba</Text>
    </View>
-  
+  <View>
+  <TouchableOpacity style={styles.but1}
+        onPress={() => navigation.navigate("Bookroom")}
+      >
+        <Text style={styles.but2}>Đặt Phòng </Text>
+        
+      </TouchableOpacity>
+  </View>
   
    
         </ScrollView>
@@ -115,6 +122,23 @@ const styles=StyleSheet.create({
     thananh:{
        marginHorizontal:10,
     
+    },
+    but1: {
+      width: 210,
+      borderRadius: 30,
+      height: 50,
+      margin: 30,
+      justifyContent: "center",
+      alignItems: 'center',
+      backgroundColor: "#20C065",
+      marginTop:50,
+      color: "white",
+      marginLeft:100
+    },
+    but2: {
+      color: 'white',
+      fontSize: 20,
+  
     },
   
 });

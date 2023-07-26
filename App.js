@@ -20,6 +20,7 @@ import Detail1 from './src/Detail1';
 import Detail2 from './src/Detail2';
 import Detail3 from './src/Detail3';
 import Profile from './src/Profile';
+import Bookroom from './src/Bookroom';
 
 
 
@@ -91,6 +92,7 @@ function App() {
         <Stack.Screen name="Detail2" component={Detail2} />
         <Stack.Screen name="Detail3" component={Detail3} />
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Bookroom" component={Bookroom} />
       </Stack.Navigator>
     </NavigationContainer>
   );

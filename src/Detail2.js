@@ -65,7 +65,7 @@ function Home({navigation}) {
     <Text style={{margin:5,marginLeft:20}}>The lush interior courtyard invites you to swim, dine or relax, while the interior amenities provide numerous options for exercise, entertainment or business.Prominent design, fabulous finishes & the ultimate open floor plan, this home features 3 bed, 2 bath + 2 powder rooms.</Text>
     <Text style={{fontSize:22,fontWeight:'bold',margin:10,marginLeft:30}}>Location</Text>
     </View>
-   <View style={styles.thananh}>
+   <View style={styles.thananh1}>
    <TouchableOpacity onPress={() => navigation.navigate("Apartments")}> 
    <Image
         source={require("../assets/detail/2.png")}
@@ -94,7 +94,14 @@ function Home({navigation}) {
     <Text style={{marginLeft:50}}>Baths</Text>
     <Text style={{marginLeft:182}}>3ba</Text>
    </View>
-  
+   <View>
+  <TouchableOpacity style={styles.but1}
+        onPress={() => navigation.navigate("Bookroom")}
+      >
+        <Text style={styles.but2}>Đặt Phòng </Text>
+        
+      </TouchableOpacity>
+  </View>
   
    
         </ScrollView>
@@ -117,7 +124,27 @@ const styles=StyleSheet.create({
        marginHorizontal:-4,
 
     },
+    thananh1:{
+      marginHorizontal:10,
+
+   },
+    but1: {
+      width: 210,
+      borderRadius: 30,
+      height: 50,
+      margin: 30,
+      justifyContent: "center",
+      alignItems: 'center',
+      backgroundColor: "#20C065",
+      marginTop:50,
+      color: "white",
+      marginLeft:100
+    },
+    but2: {
+      color: 'white',
+      fontSize: 20,
   
+    },
 });
 function Saved() {
     return (
