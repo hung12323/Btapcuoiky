@@ -45,7 +45,7 @@ const Detail =({navigation}) =>{
   )
 }
 
-function Home() {
+function Home({navigation}) {
   return (
  
     
@@ -65,7 +65,7 @@ function Home() {
     <Text style={{fontSize:22,fontWeight:'bold',margin:10,marginLeft:30}}>Location</Text>
     </View>
    <View style={styles.thananh}>
-   <TouchableOpacity>
+   <TouchableOpacity onPress={() => navigation.navigate("Apartments")}> 
    <Image
         source={require("../assets/detail/2.png")}
       />

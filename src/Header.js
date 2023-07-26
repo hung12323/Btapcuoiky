@@ -7,7 +7,8 @@ const Header = () => {
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10, marginTop:50 }}>
             <TouchableOpacity>
                 <Image 
-                    source={require('../assets/categori/profile.png')}
+                    source={require('../assets/profile/1.png')}
+                    style={{height:30,width:30,marginLeft:5}}
                 />
             </TouchableOpacity>
             <Text style={{fontSize: 20}}>HOME</Text>

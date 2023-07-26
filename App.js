@@ -5,8 +5,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
-import Home from './src/Home';
+import Home from './src/Home'
 import Collections  from './src/Collections';
+import Header  from './src/Header';
 import Saved from './src/Saved';
 import Search from './src/Search';
 import LandingScreen from './src/LandingScreen';
@@ -18,7 +19,6 @@ import Detail from './src/Detail';
 import Detail1 from './src/Detail1';
 import Detail2 from './src/Detail2';
 import Detail3 from './src/Detail3';
-
 import Profile from './src/Profile';
 
 
@@ -81,6 +81,7 @@ function App() {
         <Stack.Screen name="Signup" component={Signup}/>
         <Stack.Screen name="Home" component={StackScreen}  />
         <Stack.Screen name="Collections" component={Collections} />
+        <Stack.Screen name="Header" component={Header} />
         <Stack.Screen name="Saved" component={Saved} />
         <Stack.Screen name="Search" component={Search} />
         <Stack.Screen name="Apartments" component={Apartments} />
